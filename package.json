@@ -2,15 +2,23 @@
   "name": "edupass-gov-gr",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "window.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "window": "electron window.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "await-sleep": "^0.0.1",
     "dotenv": "^10.0.0",
-    "puppeteer": "^11.0.0"
+    "puppeteer": "^11.0.0",
+    "puppeteer-core": "^11.0.0",
+    "puppeteer-in-electron": "^3.0.5"
+  },
+  "devDependencies": {
+    "electron": "^16.0.1",
+    "electron-builder": "^22.14.5"
   }
 }
