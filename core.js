@@ -83,7 +83,7 @@ async function start(page) {
     } else {
         const now = new Date();
         d = now.getDate().toString();
-        m = now.getMonth().toString();
+        m = (now.getMonth() + 1).toString();
         y = now.getFullYear().toString();
     }
     await page.type('input[name="self_test_date-day"]', d);
