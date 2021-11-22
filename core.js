@@ -90,10 +90,8 @@ async function start(page) {
     await page.type('input[name="self_test_date-month"]', m);
     await page.type('input[name="self_test_date-year"]', y);
 
-    // buttons = await page.$$("button");
-    // await buttons[3].click();
-    // await page.waitForNavigation();
-    // await sleep(1000);
+    buttons = await page.$$("button");
+    await buttons[3].click();
 }
 
 exports.start = start;
